@@ -1,0 +1,45 @@
+@function fn($px){
+@return $px/37.5*1rem
+}
+.list{
+    .head{
+        position: fixed;
+        height: fn(57);
+        width: fn(375);
+        padding-top:fn(10);
+        border-bottom:1px solid #ccc;
+        background: #EEEEEE;
+        input{
+            height: fn(43);
+            width: fn(310);
+            border-radius: 5px;
+            margin-left: fn(20);
+            font-size: fn(18);
+            text-align: center;
+        }
+        .icon-one{
+            font-size: fn(20);
+            color: #999;
+            margin-left: fn(10);
+        }
+        .icon-two{
+            font-size: fn(20);
+            color: #999;
+            position:absolute;
+            top:fn(20);
+            left: fn(50);
+        }
+    }
+    .ListLeft{
+        display: inline-block;
+
+//      height: fn(1000);
+    }
+    .ListRight{
+        display: inline-block;
+        background: #fff;
+        width: fn(275);
+        float: right;
+        margin-top: fn(80);
+    }
+}

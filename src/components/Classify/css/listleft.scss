@@ -1,0 +1,30 @@
+@function fn($px){
+@return $px/37.5*1rem
+}
+.ListLeft{
+    padding-top: fn(70);
+    display: inline-block;
+
+    overflow-y: auto;
+    position: fixed;
+    top: fn(10);
+    left: 0;
+    bottom: fn(50);
+    z-index: -1;
+    ul{
+//      margin-top: fn(10);
+       display: inline-block;
+        li{
+            width: fn(100);
+            height: fn(50);
+            font-size: fn(16);
+            line-height: fn(50);
+            text-align: center;
+        }
+        .active{
+            background: #fff;
+            color: red;
+            border-left:2px solid red ;
+        }
+    }
+}

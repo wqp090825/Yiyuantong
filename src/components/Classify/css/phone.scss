@@ -1,0 +1,39 @@
+@function fn($px){
+@return $px/37.5*1rem
+}
+
+.phone{
+        width: fn(375);
+        background: #fff;
+        height: fn(500);
+        h3{
+            height: fn(20);
+            line-height: fn(20);
+        }
+        ul{
+              width: fn(375);
+              padding-top: fn(20);
+            li{
+                width: fn(74);
+                height:fn(113) ;
+                list-style: none;
+                border:1px solid #EEEEEE ; 
+                margin-left: fn(4);
+                background: #fff;
+                display: inline-block;
+                float: left;
+                margin-left: fn(10);
+                margin-right: fn(10);
+                margin-bottom: fn(5);
+                img{
+                    height: fn(70);
+                    width: fn(74);
+                }
+                p{
+                    margin: fn(4);
+
+                }
+
+            }
+        }
+    }

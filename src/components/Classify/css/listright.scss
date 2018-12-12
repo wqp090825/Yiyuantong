@@ -1,0 +1,26 @@
+@function fn($px){
+@return $px/37.5*1rem
+}
+.ListRight{
+    padding-bottom: fn(100);
+    ul{
+        overflow: auto;
+       h3{
+            height: fn(30);
+            line-height: fn(30);
+            font-size: fn(16);
+        }
+        li{
+            list-style: none;
+            width: fn(75);
+            height: fn(115);
+            display: inline-block;
+            margin: fn(8);
+            text-align: center;
+            img{
+                width: fn(70);
+                height: fn(80);
+            } 
+        }
+    }
+}

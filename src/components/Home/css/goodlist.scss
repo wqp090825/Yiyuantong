@@ -1,0 +1,51 @@
+@function fn($px){
+@return $px/37.5*1rem
+}
+
+.goodlist{
+    width: fn(375);
+    .search{
+        width: fn(375);
+        height: fn(60);
+        position: fixed;
+        background: #EC5151;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: fn(22);
+        line-height: fn(60);
+        .icon-one{
+         margin-left: fn(20);
+         margin-right: fn(100);
+          color: #fff;
+        }
+    }
+      .goolist-data{
+        padding-top: fn(60);
+        background: #fff;
+         width: fn(375);
+        img{
+            width: fn(375);
+            height: fn(375);
+        }
+        h3{
+            color: #000;
+            font-size: fn(18);
+            margin: fn(15);
+        }
+        h2{
+            color: #EC5151;
+            font-size: fn(20);  
+            margin-left: fn(20); 
+        }
+        p{
+          color: red;
+          font-size: fn(20);  
+           margin-left: fn(20); 
+           margin-bottom: fn(15);
+        }
+        .Button{
+            margin-left: fn(45); 
+        }
+        }
+}
+

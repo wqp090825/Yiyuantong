@@ -1,0 +1,20 @@
+@function fn($px){
+@return $px/37.5*1rem
+}
+.household{
+    background: #fff;
+    width: fn(375);
+    p{
+        font-size: fn(18);
+    }
+    .household-g{
+        .goods-item{
+            width: 70%;
+            p{
+                font-size: fn(16);
+                
+            }
+        }
+    }
+    
+}

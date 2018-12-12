@@ -1,0 +1,122 @@
+@function fn($px){
+@return $px/37.5*1rem
+}
+.login{
+    background: #fff;
+    width: fn(375);
+//  height: fn(650);
+    .Loginone{
+        border-bottom:fn(1) dashed #ccc ;
+        margin-bottom: 1px;
+        padding-top: fn(30);
+        padding-bottom: fn(20);
+        font-size: fn(16);
+        margin-left: fn(25);
+        margin-right: fn(30);
+         background: #fff;
+            .Loginname{
+               border: none; 
+               margin-left: fn(20); 
+               font-size: fn(16);
+               color: #333;
+
+
+            } 
+    }
+    .Logintwo{
+        padding-top: fn(20);
+        padding-bottom: fn(20);
+         font-size: fn(16);
+         margin-right: fn(30);
+          margin-left: fn(25);
+        border-bottom:fn(1) dashed #ccc ;
+        .Loginpass{
+            margin-left: fn(20);
+               border: none;  
+               font-size: fn(16);
+            } 
+    }
+    p{
+        height:fn(30) ;
+        font-size: fn(16);
+        line-height: fn(30);
+        margin-left: fn(270);
+        margin-top: fn(25);
+    }
+    .button{
+        height: fn(45);
+        border:none;
+        width: fn(340);
+        background: #EC5151;
+        border-radius: fn(3);
+        margin-top: fn(20);
+        font-size: fn(18);
+        color: #fff;
+        margin-left: fn(15);
+    }
+    .newreg{
+        color: red;
+        height:fn(30) ;
+        margin-left: fn(130);
+        margin-bottom: fn(50);
+    }
+    .sanlogin{
+        border-bottom:1px solid #ccc ;
+        position: relative;
+         .three{
+            margin-left: fn(131);
+            position: absolute;
+            top: fn(-42);
+        }
+    }
+    .last{
+        margin:fn(50) fn(50) fn(20) fn(20);
+        height: fn(220);
+        .qq{
+            display: inline-block;
+            width: fn(34);
+            height: fn(54);
+            font-size: fn(40);
+            text-align: center;
+            line-height: fn(54);
+            margin-left: fn(70);
+            margin-right: fn(60);
+            i{
+                border-radius:50% ;
+                width: fn(60);
+                height: fn(60);
+                text-align: center;
+                 line-height: fn(60);
+                background: cornflowerblue;
+                color: #fff;  
+            }
+           h3{
+               font-size: fn(16);
+               margin-left: fn(10);
+           }
+        }
+        .weibo{
+            display: inline-block;
+            width: fn(34);
+            height: fn(54);
+            font-size: fn(40);
+            text-align: center;
+            line-height: fn(54);
+            margin-left: fn(30);
+            margin-right: fn(30);
+            i{
+                border-radius:50% ;
+                width: fn(60);
+                height: fn(60);
+                background: #EC5151;
+                color: #fff; 
+                text-align: center;
+                line-height: fn(60);   
+            }
+           h3{
+               font-size: fn(16);
+           }
+        }
+    }
+   
+}

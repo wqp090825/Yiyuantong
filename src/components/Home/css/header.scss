@@ -1,0 +1,178 @@
+@function fn($px){
+@return $px/37.5*1rem
+}
+
+.home{
+    position: relative;
+    overflow: auto;
+    .header{
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: fn(43);
+        margin:fn(8);
+        input{
+          height: fn(35);
+          width: fn(230);
+          border-radius: fn(6); 
+          margin-left: fn(40);
+          position: relative; 
+          text-align: center;
+        }
+        .icon{
+            color: #fff;
+            margin-left: fn(30);
+            font-size: fn(18);
+        }
+        p{
+           color: #fff;
+           font-size: fn(16);
+           display: inline-block;
+        }
+        .icon-two{
+            font-size: fn(20);
+            color: #999;
+            position:absolute;
+            top:fn(10);
+            left: fn(50);
+            
+        }
+    }
+    .nav{
+        width: fn(374);
+        height: fn(180);
+        margin-bottom: fn(15);
+        padding-top: fn(15);
+        background: #fff;
+        .navimg{
+            background: #fff;
+            width: fn(355);
+            height: fn(160);
+            text-align: center;
+            ul{
+                li{
+                    width: fn(86);
+                    height:fn(93);
+                     display: inline-block;
+                     color: #282C34;
+                     margin-left: fn(2);
+                   img{
+                       width: fn(52);
+                       height: fn(52);
+                       display: inline-block;
+                   } 
+                   p{
+                       font-size: fn(14);
+                       color: #282C34;
+                   }
+                }
+            }
+        }
+    }
+    .content{
+        width: fn(375);
+        height: fn(56);
+        background: #fff;
+       margin-bottom: fn(20);
+        span{
+            font-size: fn(16);
+            text-align: center;
+            line-height: fn(56);
+            margin-left: fn(30);
+        }
+        .content-one{
+            color:#ec5151;
+        }
+        .content-span{
+            margin-left: fn(210);
+        }
+        .content-icon{
+           font-size: fn(18);
+           margin-left: fn(3);
+           color: #999;
+        }
+        .content-icons{
+            color:#ec5151;
+        }
+    }
+    .loadmore{
+       width: fn(375);
+       height: fn(57); 
+       border:1px solid #EEEEEE ; 
+       background: #fff;
+       line-height: fn(57);
+      
+       h3{
+           display: inline-block;
+           font-size: fn(18);
+           margin-left: fn(10);
+           margin-right: fn(15);
+       }
+       span{
+           color: #999;
+           font-size: fn(14);
+       }
+       .loadmore-one{
+           font-size: fn(16);
+           margin-left: fn(37);
+           color: #282C34;
+       }
+       .content-icon{
+           font-size: fn(18);;
+           color: #999;
+           margin-left: fn(5);
+        }
+    }
+    .loadlist{
+        width: fn(375);
+        height:fn(270) ;
+        border:1px solid #ccc ;
+//      margin-bottom: fn(120);
+        background: #fff;
+   
+        ul{
+           display: flex;
+             height:fn(240) ;
+             margin-top: fn(5);
+
+            li{
+                width: fn(160);
+                height:fn(240) ;
+                list-style: none;
+                border:1px solid #EEEEEE ; 
+                margin-left: fn(4);
+                background: #fff;
+                img{
+                    height: fn(117);
+                    width: fn(117);
+                }
+                p{
+                    margin: fn(4);
+                    margin-top:fn(15);
+                }
+                .loadlist-p2{
+                    color: red;
+                }
+            }
+        }
+    }
+    .gongge{
+        margin-top: fn(30);
+        margin-bottom: fn(100);
+        width: fn(375);
+        .goods-item{
+            width: fn(180);
+            height: fn(278);
+           margin-left: fn(10);
+            img{
+               width: fn(180);
+               height: fn(200); 
+            }
+            h3{
+                color: #333;
+                font-size: fn(18);
+            }
+        }
+    }
+}
+

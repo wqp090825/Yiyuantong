@@ -1,0 +1,25 @@
+@function fn($px){
+@return $px/37.5*1rem
+}
+.Goods{
+    width: fn(375);
+    
+    .search{
+        width: fn(375);
+        height: fn(60);
+        position: fixed;
+        background: #EC5151;
+        box-sizing: border-box;
+        color: #fff;
+        font-size: fn(22);
+        line-height: fn(60);
+        .icon-one{
+         margin-left: fn(20);
+         margin-right: fn(100);
+          color: #fff;
+        }
+    }
+    .GoodsList{
+        padding-top: fn(70);
+    }
+}
